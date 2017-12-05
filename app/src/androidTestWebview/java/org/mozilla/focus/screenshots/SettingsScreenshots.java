@@ -86,9 +86,7 @@ public class SettingsScreenshots extends ScreenshotTest {
         /* Language List (First page only */
         onView(withText(R.string.preference_language))
                 .perform(click());
-        onView(withText(R.string.action_cancel))
-                .check(matches(isDisplayed()));
-
+        device.waitForIdle();
 
         Screengrab.screenshot("Language_Selection");
         onView(withText(R.string.action_cancel))
