@@ -11,14 +11,14 @@ app_package_name 'org.mozilla.focus.debug'
 use_tests_in_packages ['org.mozilla.focus.screenshots']
 
 app_apk_path 'app/build/outputs/apk/focusWebviewUniversal/debug/app-focus-webview-universal-debug.apk'
-tests_apk_path 'app/build/outputs/apk/androidTest/focusWebviewUniversal/debug/app-focus-webview-universal-debug-a$
+tests_apk_path 'app/build/outputs/apk/androidTest/focusWebviewUniversal/debug/app-focus-webview-universal-debug-androidTest.apk
 
 # 67 locales
 locales ['am','an','anp','ar', 'ast', 'az', 'bg', 'bn-BD', 'bn-IN', 'bs','ca',
 'cak','cs', 'cy', 'da','de','dsb', 'el', 'eo', 'es-AR', 'es-CL', 'es-ES', 'es-MX',
 'eu','fa', 'fi','fr', 'fy-NL','ga-IE', 'gu-IN','he', 'hi-IN','hr', 'hsb', 'hu',
-'hy-AM', 'ia','id', 'it', 'ja', 'ka', 'kab', 'kk', 'ko', 'lo', 'lt','lv','meh','mix',
-'mr','ms', 'my','nb-NO', 'ne-NP', 'nl', 'nn-NO','oc', 'pl', 'pt-BR', 'ro',
+'hy-AM', 'ia','id', 'it', 'ixl', 'ja', 'ka', 'kab', 'kk', 'ko', 'lo', 'lt','lv','meh','mix',
+'ms', 'my','nb-NO', 'ne-NP', 'nl', 'nn-NO','oc', 'pl', 'pt-BR', 'ro',
 'ru', 'sk', 'sl', 'sq', 'sr', 'sv-SE', 'ta', 'te', 'th', 'tr','trs','tt', 'uk', 'ur',
 'vi','wo','zam','zh-CN', 'zh-TW','en-US']
 # Clear all previous screenshots locally. Technically not needed in automation.
