@@ -14,7 +14,6 @@ import org.junit.Rule;
 import org.junit.rules.TestRule;
 import org.junit.rules.TestWatcher;
 import org.junit.runner.Description;
-import org.mozilla.focus.helpers.HostScreencapScreenshotStrategy;
 import org.mozilla.focus.helpers.SessionLoadedIdlingResource;
 
 import tools.fastlane.screengrab.Screengrab;
@@ -24,7 +23,7 @@ import tools.fastlane.screengrab.UiAutomatorScreenshotStrategy;
  * Base class for tests that take screenshots.
  */
 abstract class ScreenshotTest {
-    final long waitingTime = DateUtils.SECOND_IN_MILLIS * 10;
+    final long waitingTime = DateUtils.SECOND_IN_MILLIS * 30;
 
     private Context targetContext;
     private SessionLoadedIdlingResource loadingIdlingResource;

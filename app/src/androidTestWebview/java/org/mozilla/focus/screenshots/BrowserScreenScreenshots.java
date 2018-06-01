@@ -82,7 +82,7 @@ public class BrowserScreenScreenshots extends ScreenshotTest {
 
     @Test
     public void takeScreenshotsOfBrowsingScreen() throws Exception {
-        Screengrab.screenshot("Ignore");
+        Screengrab.screenshot("Ignore_Browsingscreen");
         takeScreenshotsOfBrowsingView();
         takeScreenshotsOfMenu();
         takeScreenshotsOfOpenWithAndShare();
@@ -155,11 +155,9 @@ public class BrowserScreenScreenshots extends ScreenshotTest {
 
     private void takeAddToHomeScreenScreenshot() throws UiObjectNotFoundException {
         TestHelper.menuButton.perform(click());
-
-        assertTrue(TestHelper.AddtoHSmenuItem.waitForExists(waitingTime));
         TestHelper.AddtoHSmenuItem.click();
 
-        assertTrue(TestHelper.AddtoHSCancelBtn.waitForExists(waitingTime));
+        TestHelper.AddtoHSCancelBtn.waitForExists(waitingTime);
         Screengrab.screenshot("AddtoHSDialog");
 
         TestHelper.AddtoHSCancelBtn.click();
